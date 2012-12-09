@@ -8,17 +8,17 @@ Persona Maker is a Python script that uses [Requests](http://docs.python-request
 
 Install from github and get dependencies from pip:
 
-  git clone git@github.com:garbados/persona_maker.git
-  cd persona_maker
-  virtualenv venv
-  source venv/bin/activate
-  pip install -r requirements.txt
+    git clone git@github.com:garbados/persona_maker.git
+    cd persona_maker
+    virtualenv venv
+    source venv/bin/activate
+    pip install -r requirements.txt
   
 # Configuration
 
 You'll need a list of your users' emails in a format like this:
 
-  ["bob@example.com", "unicorns@friendshipisland.com", "lolcats@inter.net"]
+    ["bob@example.com", "unicorns@friendshipisland.com", "lolcats@inter.net"]
   
 Then, rename `settings.py.example` to `settings.py` and, inside of it, change...
 
@@ -31,12 +31,12 @@ That should be it for setup.
 
 To construct your user persona:
 
-  python miner.py
-  python parser.py
+    python miner.py
+    python parser.py
   
 `parser.py` should return output like this:
 
-  [(u'Games', 10), (u'Cambridge', 8), (u'Internet Startups', 7), (u'Money', 5), (u'Kickstarter', 4)]
+    [(u'Games', 10), (u'Cambridge', 8), (u'Internet Startups', 7), (u'Money', 5), (u'Kickstarter', 4)]
   
 The number next to each phrase indicates the number of times that phrase appears in the topics your users are interested in or knowledgeable on. So, a report like the above shows that "Games" showed up 10 times among my users. [What nerds](http://www.maxthayer.org/games) :P
 
