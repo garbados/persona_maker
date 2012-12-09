@@ -7,7 +7,7 @@ with open(email_list, 'r') as f:
 
 user_data = []
 
-for email in emails[:1]:
+for email in emails:
     params = dict(email=email, apiKey=api_key)
     r = requests.get(url, params=params)
     if r.status_code == 403:
