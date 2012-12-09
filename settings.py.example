@@ -1,0 +1,3 @@
+url = "https://api.fullcontact.com/v2/person.json"
+api_key = "your_full_contact_api_key"
+email_list = 'relative/path/to/your/list/of/emails'
